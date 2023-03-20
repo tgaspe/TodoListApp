@@ -1,9 +1,9 @@
 # TodoList App
 
 About:
-Project was created using Vue.js and Vuetify Library.
+Project was created using Vue.js, Axios and Vuetify Library.
 User can add todos to a todo list, archive, delete, and edit them.
-And can also check some great comics at Aldo page.
+In addition, you can also check some great comics at the Aldo tab.
 
 
 ## Project setup
