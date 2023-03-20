@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ComicBook from '../views/ComicBook.vue'
 import LoginPage from '../views/LoginPage.vue'
-import TestPage from '../views/TestPage.vue'
 
 Vue.use(VueRouter)
 
@@ -31,12 +30,6 @@ const routes = [
     name: 'albo',
     component: ComicBook
   },
-  {
-    path: '/test',
-    name: 'test',
-    component: TestPage
-  },
-
 ]
 
 const router = new VueRouter({

@@ -1,16 +1,12 @@
 <template>
   <div class="home pa-6">
-    <!-- <HeaderPage/> -->
     <h2 class="text-center text-h4 font-weight-light">Todo-List</h2>
     <div class="username">
       <h2 :key="UserKey" class="text-h5 font-weight-light">Welcome {{ username }}</h2>
     </div>
-    <!-- <h2 :key="UserKey">Welcome {{ username }}</h2> -->
     <div class="addTodo">
       <AddTodo v-on:add-todo="addItem"/>
     </div>
-    
-    <!-- <TodoItems :key="TodosKey" v-bind:todos="todos" v-bind:archive="false" v-on:delete-todo="deleteItem"  v-on:edition="editTodo"/> -->
     <TodoList
       :key="TodosKey" 
       v-bind:todos="todos" 
@@ -18,22 +14,17 @@
       v-on:delete-todo="deleteItem"  
       v-on:edition="editTodo"
     />
-    <!-- <FooterPage/> -->
   </div>
 </template>
 
 <script>
-//import HeaderPage from "../components/layout/Header.vue";
-//import FooterPage from "../components/layout/Footer.vue";
-//import TodoItems from "../components/Todos.vue";
 import AddTodo from "../components/AddTodo.vue";
-import TodoList from "../components/vuetify/TodoList.vue";
+import TodoList from "../components/TodoList.vue";
 
 export default {
   name: 'HomeView',
   components: {
     AddTodo,
-    //TodoItems,
     TodoList,
   },
   data () {

@@ -1,6 +1,5 @@
 <template>
   <div class="archive pa-6">
-    <!-- <HeaderPage/> -->
     <h2 class="text-center text-h4 font-weight-light">Archive</h2>
     <div class="username">
       <h2 :key="UserKey" class="text-h5 font-weight-light">Welcome {{ username }}</h2>
@@ -38,7 +37,6 @@
             </v-menu>
             
     </v-toolbar>
-    <!-- <h1>{{ searchValue }}</h1> -->
     <TodoList 
       v-bind:key="TodosKey" 
       v-bind:todos="search" 
@@ -46,16 +44,11 @@
       v-bind:archive="true" 
       v-on:delete-todo="deleteItem"
       />
-    <!-- <FooterPage/> -->
   </div>
 </template>
 
 <script>
-// import HeaderPage from "../components/layout/Header.vue";
-// import FooterPage from "../components/layout/Footer.vue";
-//import TodoItems from "../components/Todos.vue";
-import TodoList from "../components/vuetify/TodoList.vue";
-//import FilterTool from "../components/FilterTool.vue";
+import TodoList from "../components/TodoList.vue";
 
 export default {
   name: "TasksCompleted",

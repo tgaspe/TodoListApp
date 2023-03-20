@@ -1,13 +1,5 @@
 <template>
     <div class="Login-page pa-6">
-      <!-- <h1>This is the Login Page</h1>
-      <p>{{ username }}</p>
-      <p>{{ password }}</p> -->
-      <!-- <form id="login" v-on:submit="loginUser">
-        <input v-model="username" id="username" type="text" name="username" placeholder="Username">
-        <input v-model="password" id="password" type="text" name="password" placeholder="Password">    
-        <input id="login-btn" type="submit" value="Log in" class="btn">
-      </form> -->
       <v-container fluid fill-height>
             <v-layout align-center justify-center>
                <v-flex xs12 sm8 md4>

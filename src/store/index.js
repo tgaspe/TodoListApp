@@ -44,30 +44,6 @@ export default new Vuex.Store({
         user: "TomCruiseIsMylife",
         completed: false,
       },
-      {
-        id: 5,
-        title: "Watch",
-        date: "20/03/23",
-        info: "Tom Cruise abs",
-        user: "TomCruiseIsMylife",
-        completed: false,
-      },
-      {
-        id: 6,
-        title: "Eat",
-        date: "21/03/23",
-        info: "Tom Cruise for lunch",
-        user: "MangakaLoko",
-        completed: false,
-      },
-      {
-        id: 7,
-        title: "Homework",
-        date: "21/03/23",
-        info: "Learn multiplication",
-        user: "JoeBidenNeverForgets42",
-        completed: false,
-      },
     ],
     todos: [
       {

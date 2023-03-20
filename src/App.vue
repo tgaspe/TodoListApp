@@ -14,7 +14,6 @@
         v-model="drawer"
         app
       >
-
         <v-list nav>
           <v-list-item prepend-icon="mdi-email" title="Inbox" value="inbox">
             <svg-icon type="mdi" :path="path1"></svg-icon>
@@ -50,10 +49,6 @@ import { mdiArchiveOutline } from '@mdi/js';
 import { mdiBookOpenVariant } from '@mdi/js';
 import { mdiLogoutVariant } from '@mdi/js';
 
-// Todo
-// - make delete work on archive
-// - add a couple more comics
-
   export default {
     name: "App",
     components: {
@@ -69,34 +64,4 @@ import { mdiLogoutVariant } from '@mdi/js';
 
   };
 </script>
-
-
-<!-- <template>
-  <v-app>
-    <v-main>
-      <nav>
-        <router-link to="/">Todo List</router-link> |
-        <router-link to="/about">Archive</router-link>
-        <router-link to="/albo">Albo</router-link>
-        <router-link to="/login">Login</router-link>
-      </nav>
-      <router-view/>
-    </v-main>
-  </v-app>
-</template>
-
-<script>
-//import NavBar from './components/layout/Navbar.vue';
-
-export default {
-  name: 'App',
-  components: {
-    //NavBar
-  },
-  data: () => ({
-    //
-  }),
-};
-</script> -->
-
 
